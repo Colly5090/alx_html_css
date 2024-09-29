@@ -1,0 +1,304 @@
+/*CSS rules*/
+
+@import url('https://www.fontsquirrel.com/fonts/source-sans-pro');
+@import url('https://www.fontsquirrel.com/fonts/Spin-Cycle-OT');
+
+/*global resets to remove default browser styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', 'Spin Cycle', sans-serif;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 1;
+}
+
+/*CSS Rule for Header*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 40vh;
+}
+nav{
+    display: flex;
+    gap: 700px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.background-image {
+    background-image: url('../css_advanced/media/Object.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CSS rule for first section*/
+.first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+    gap: 100px;
+}
+.presenter {
+    display: flex;
+    gap: 60px;
+}
+.presenter p, h3{
+    width: 180px;
+    line-height: 25px;
+    text-align: center;
+}
+.presenter img {
+    padding: 8px;
+}
+#first-head {
+    padding-left: 370px;
+    margin-bottom: 60px;
+}
+
+.details button {
+    margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.details span {
+    margin: 0 1px;
+    padding-left: 80px;
+}
+.details h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.special {
+    color: #C271FF;
+}
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C271FF;
+    height: 50vh;
+    gap: 30px;
+}
+.block blockquote, .block h3, .block p{
+    text-align: left;
+    width: 600px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.third-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 80vh;
+}
+.third-section h2{
+    position: relative;
+    top: -100px;
+    left: 100px;
+    width: 500px;
+}
+.media{
+    display: flex;
+    position: absolute;
+    left: 100px;
+}
+.media img{
+    width: 30px;
+}
+.media h4{
+    position: absolute;
+    top: 209px;
+    padding-left: 40px;
+    font-size: 0.8rem;
+    color: #C271FF;
+}
+.media h3{
+    color: #071629;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+
+}
+ .media p {
+    color: #071629;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    width: 190px;
+    line-height: 20px;
+}
+
+.video1 {
+    background-image: url('../css_advanced/media/9.png');
+}
+.video2 {
+    background-image: url('../css_advanced/media/7.png');
+}
+.video3 {
+    background-image: url('../css_advanced/media/8.png');
+}
+.video4 {
+    background-image: url('../css_advanced/media/6.png');
+}
+.video1, .video2, .video3, .video4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10vh;
+    width: 10vw;
+}
+
+.video1 img {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+
+.video2 img {
+   position: absolute;
+   top: 25px;
+   left: 380px;
+}
+.video3 img {
+    position: absolute;
+    top: 25px;
+    left: 730px;
+}
+.video4 img {
+    position: absolute;
+    top: 25px;
+    right: 250px;
+}
+
+.rating {
+    display: flex;
+    gap: 60px;
+}
+.rating p {
+    color: #C271FF;
+}
+
+.rating img {
+    width: 6vw;
+}
+
+
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #071629;
+    color: white;
+    height: 70vh;
+    gap: 80px;
+    text-align: center;
+}
+
+.fourth-section > button {
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: blueviolet;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.membership {
+    display: flex;
+}
+.membership p{
+    line-height: 30px;
+    font-size: medium;
+    font-family: 'Source Sans Pro', 'Spin Cycle', sans-serif;
+    text-align: left;
+    width: 330px;
+}
+.membership h3{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    text-wrap: nowrap;
+    padding: 20px 0 20px 90px;
+}
+
+.last-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+.faq-item {
+    padding: 40px;
+    text-align: left;
+    width: 500px;
+}
+.last-section h3 {
+    width: 200px;
+}
+
+.last-section h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.last-section p{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+footer{
+    background-color: #071629;
+    height: 25vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
